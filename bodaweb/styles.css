@@ -1,0 +1,52 @@
+body {
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+  background-color: #f4f5f7 !important;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+/* --- PALETA GLOBAL (Gris Perla, Azul Acero y Burdeos Sutil) --- */
+:root {
+  --bg-primary: #f4f5f7;
+  --bg-secondary: #e2e8f0;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --color-burgundy: #722F37;
+  --color-steel: #475569;
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-dark);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Modales y utilidades */
+.audio-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+
+#gift-modal.show, #lightbox-modal.show {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+#lightbox-modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
