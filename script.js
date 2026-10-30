@@ -403,7 +403,7 @@ function setupRSVPLogic() {
           }).finally(() => {
             submitBtn.innerHTML = originalBtnText;
 
-            const phoneNumber = "5215512345678"; 
+            const phoneNumber = "525541006372"; 
             let message = "";
 
             if (isAttending) {
